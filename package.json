@@ -20,11 +20,11 @@
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
     "svelte-preprocess": "^3.5.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "svelte-notifications": "^0.9.9",
+    "axios": "^0.19.2",
   },
   "dependencies": {
-    "axios": "^0.19.2",
     "sirv-cli": "^0.4.4",
-    "svelte-notifications": "^0.9.9"
   }
 }

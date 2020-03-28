@@ -9,23 +9,22 @@
   import WhatYouWillLearn from "./Components/WhatYouWillLearn.svelte";
   import WhyLaravel from "./Components/WhyLaravel.svelte";
   import TeamPackage from "./Components/TeamPackage.svelte";
-  import Notifications from "svelte-notifications";
+  import Notify from "./Notify/NotifyComponent.svelte"
 </script>
 
 <style>
 
 </style>
 
-<Notifications>
-  <main>
-      <Banner />
-      <!-- <TeamPackage /> -->
-      <WhatYouWillLearn />
-      <Testimonial />
-      <WhyLaravel />
-      <Instructor />
-      <Faq />
-      <EmailButton />
-      <Footer />
-  </main>
-</Notifications>
+<main>
+    <Notify />
+    <Banner />
+    <!-- <TeamPackage /> -->
+    <WhatYouWillLearn />
+    <Testimonial />
+    <WhyLaravel />
+    <Instructor />
+    <Faq />
+    <EmailButton />
+    <Footer />
+</main>

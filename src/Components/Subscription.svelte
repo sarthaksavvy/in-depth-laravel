@@ -1,8 +1,7 @@
 <script>
   import axios from "axios";
-  import { getNotificationsContext } from "svelte-notifications";
+  import {notify} from '../Notify/store.js'
 
-  const { addNotification } = getNotificationsContext();
   let email;
   let titleSound;
   let loading = false;
@@ -14,14 +13,11 @@
 
   function handleForm(e) {
     e.preventDefault();
+
     if(loading || email == null){
       return;
     } 
 
-    axios.defaults.withCredentials = true;
-    axios.defaults.headers.common[
-      "Authorization"
-    ] = `Bearer EgJQ11V8NDmKTfM6Z2qakrnJ4aE0eCv4jxAmkDSnBk10b0WO1ZSDC15iSJFgNnF0tMVf5Q57JeY9tREH`;
 
     loading = true;
     axios
@@ -31,31 +27,35 @@
       })
       .then(res => {
         playSound(titleSound);
-        addNotification({
-          text: "Cool 😎, now check your inbox 📩 to complete subscription.",
-          position: "top-center",
-          type: "success",
-          removeAfter: 5000
-        });
+        notify({
+          message: 'Cool 😎, now check your inbox 📩 to complete subscription.',
+          type:'success',
+          fly:{
+            y:100,duration:500
+          }
+        })
         loading = false;
       })
       .catch(e => {
-        addNotification({
-          text: "Something went wrong 😕",
-          position: "top-center",
-          type: "danger"
-        });
+        notify({
+          message: 'Oops! Something went wrong. 😞',
+          type:'error',
+          fly:{
+            y:100,duration:500
+          }
+        })
         loading = false;
       });
   }
 </script>
+
 
 <form
   class="border-2 border-yellow-400 shadow-2xl rounded bg-white p-2 flex
   justify-between"
   on:submit={handleForm}>
   <input
-    type="email"
+    type="text"
     placeholder="Your Awesome Email..."
     bind:value={email}
     class="outline-none text-black px-1" />

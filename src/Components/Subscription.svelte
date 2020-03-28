@@ -55,7 +55,7 @@
   justify-between"
   on:submit={handleForm}>
   <input
-    type="text"
+    type="email"
     placeholder="Your Awesome Email..."
     bind:value={email}
     class="outline-none text-black px-1" />

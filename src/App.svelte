@@ -16,16 +16,16 @@
 
 </style>
 
-<main>
-  <Notifications>
-    <Banner />
-    <!-- <TeamPackage /> -->
-    <WhatYouWillLearn />
-    <Testimonial />
-    <WhyLaravel />
-    <Instructor />
-    <Faq />
-    <EmailButton />
-    <Footer />
-  </Notifications>
-</main>
+<Notifications>
+  <main>
+      <Banner />
+      <!-- <TeamPackage /> -->
+      <WhatYouWillLearn />
+      <Testimonial />
+      <WhyLaravel />
+      <Instructor />
+      <Faq />
+      <EmailButton />
+      <Footer />
+  </main>
+</Notifications>

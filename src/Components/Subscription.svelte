@@ -14,7 +14,9 @@
 
   function handleForm(e) {
     e.preventDefault();
-    if(loading || email == null) return
+    if(loading || email == null){
+      return;
+    } 
 
     axios.defaults.withCredentials = true;
     axios.defaults.headers.common[

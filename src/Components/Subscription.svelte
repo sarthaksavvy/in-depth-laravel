@@ -7,7 +7,7 @@
   let loading = false;
 
   const playSound = sound => {
-    sound.volume = 0.2;
+    sound.volume = 0.05;
     sound.play();
   };
 
@@ -32,8 +32,10 @@
           type:'success',
           fly:{
             y:100,duration:500
-          }
+          },
+          time:5000
         })
+        email = "";
         loading = false;
       })
       .catch(e => {

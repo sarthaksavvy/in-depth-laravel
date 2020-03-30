@@ -6,7 +6,11 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
+  body{
+  	margin:0;
+  }
+
 @media (min-width: 768px) {
   .md\:masonry-3{
 	  column-count: 3

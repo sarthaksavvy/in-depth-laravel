@@ -9,7 +9,7 @@
   import WhatYouWillLearn from "./Components/WhatYouWillLearn.svelte";
   import WhyLaravel from "./Components/WhyLaravel.svelte";
   import TeamPackage from "./Components/TeamPackage.svelte";
-  import Notify from "./Notify/NotifyComponent.svelte"
+  import Notify from "./Notify/NotifyComponent.svelte";
 </script>
 
 <style>
@@ -17,14 +17,14 @@
 </style>
 
 <main>
-    <Notify />
-    <Banner />
-    <!-- <TeamPackage /> -->
-    <WhatYouWillLearn />
-    <Testimonial />
-    <WhyLaravel />
-    <Instructor />
-    <Faq />
-    <EmailButton />
-    <Footer />
+  <Notify />
+  <Banner />
+  <!-- <TeamPackage /> -->
+  <WhatYouWillLearn />
+  <Testimonial />
+  <WhyLaravel />
+  <Instructor />
+  <Faq />
+  <EmailButton />
+  <Footer />
 </main>

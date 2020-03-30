@@ -74,7 +74,7 @@
   <div class="flex flex-wrap lg:w-10/12 justify-around">
     {#each items as item}
       <div class="py-5 lg:w-1/2 lg:px-10">
-        <p class="italic text-gray-800 text-2xl py-3">{item.title}</p>
+        <p class="italic text-gray-800 font-semibold text-2xl py-3">{item.title}</p>
         <p class="text-xl text-gray-700">
           {@html item.details}
         </p>

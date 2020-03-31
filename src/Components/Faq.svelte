@@ -11,6 +11,16 @@
         "Once you complete the course you will get the <strong>Certificate of Completion</strong> so that you can easily share your accomplishment with your friends, relatives, co-workers and potential employers or can shared on Facebook, Twitter, and LinkedIn directly from Bitfumes"
     },
     {
+      title: "Will there be updates to the material ?",
+      answer:
+        "Sure! with every release of laravel, I plan to review and update the course and keep it up to date and having the code in sync with is the best way the course should be taught."
+    },
+    {
+      title: "What if I don't like this course ?",
+      answer:
+        "I have created this course with full passion and enthusiasm to help other not just to make money. You can simply email me with proper reason and I will give full refund to you."
+    },
+    {
       title: "Can I use paypal to purchase this course ?",
       answer:
         "Yes ofcourse, you can choose paypal as the payment method in checkout step."

@@ -28,7 +28,7 @@
       .then(res => {
         playSound(titleSound);
         notify({
-          message: 'Cool 😎, now check your inbox 📩 to complete subscription.',
+          message: 'Cool 😎, now check your inbox(or spam) folder 📩 to complete subscription.',
           type:'success',
           fly:{
             y:100,duration:500

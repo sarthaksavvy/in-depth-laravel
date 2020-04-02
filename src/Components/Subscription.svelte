@@ -1,23 +1,17 @@
 <script>
   import axios from "axios";
   import {notify} from '../Notify/store.js'
+  import { navigate } from "svelte-routing";
 
   let email;
-  let titleSound;
   let loading = false;
-
-  const playSound = sound => {
-    sound.volume = 0.05;
-    sound.play();
-  };
 
   function handleForm(e) {
     e.preventDefault();
 
     if(loading || email == null){
       return;
-    } 
-
+    }
 
     loading = true;
     axios
@@ -26,15 +20,7 @@
         email: email
       })
       .then(res => {
-        playSound(titleSound);
-        notify({
-          message: 'Cool 😎, now check your inbox(or spam) folder 📩 to complete subscription.',
-          type:'success',
-          fly:{
-            y:100,duration:500
-          },
-          time:5000
-        })
+        navigate("/thank-you");
         email = "";
         loading = false;
       })
@@ -73,7 +59,4 @@
     </div>
 </form>
 
-<audio bind:this={titleSound}>
-  <source src="sounds/welcome.mp3" />
-  Your browser isn't invited for super fun audio time.
-</audio>
+

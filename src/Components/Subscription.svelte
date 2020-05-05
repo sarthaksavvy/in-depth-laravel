@@ -1,6 +1,6 @@
 <script>
   import axios from "axios";
-  import {notify} from '../Notify/store.js'
+  import { notify } from "../Notify/store.js";
   import { navigate } from "svelte-routing";
 
   let email;
@@ -9,7 +9,7 @@
   function handleForm(e) {
     e.preventDefault();
 
-    if(loading || email == null){
+    if (loading || email == null) {
       return;
     }
 
@@ -26,17 +26,17 @@
       })
       .catch(e => {
         notify({
-          message: 'Oops! Something went wrong. 😞',
-          type:'error',
-          fly:{
-            y:100,duration:500
+          message: "Oops! Something went wrong. 😞",
+          type: "error",
+          fly: {
+            y: 100,
+            duration: 500
           }
-        })
+        });
         loading = false;
       });
   }
 </script>
-
 
 <form
   class="border-2 border-yellow-400 shadow-2xl rounded bg-white p-2 flex
@@ -47,7 +47,7 @@
     placeholder="Your Awesome Email..."
     bind:value={email}
     class="outline-none text-black px-1" />
-    <div class="bg-blue-600 rounded shadow-2xl text-white cursor-pointer w-32">
+  <div class="bg-blue-600 rounded shadow-2xl text-white cursor-pointer w-32">
     {#if loading}
       <i class="fas fa-circle-notch fa-spin text-2xl px-2 py-2 text-blue-400" />
     {:else}
@@ -56,7 +56,5 @@
         value="Subscribe Now"
         class="p-2 bg-blue-600 cursor-pointer" />
     {/if}
-    </div>
+  </div>
 </form>
-
-

@@ -144,7 +144,7 @@
         </li>
         <li class="py-1 text-left typewriter">
           <i class="fas fa-check-circle text-green-700 px-1 py-2" />
-          Laravel + (Livewire & Vuejs)
+          Laravel + (Livewire, Vuejs, Nuxtjs)
         </li>
         <li class="py-1 text-left typewriter">
           <i class="fas fa-check-circle text-green-700 px-1 py-2" />

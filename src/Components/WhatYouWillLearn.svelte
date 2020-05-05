@@ -26,14 +26,19 @@
         "Create an application using laravel to shorten big url into short url. We will also track the number of clicks and area from where short url is clicked. Using integrated Vuejs we will create Single Page Application to hit laravel endpoints."
     },
     {
-      title: "Project 3 - Birthday Invitation App API",
+      title: "Project 3 - Eventile - An Event Ticket App API",
       details:
-        "Laravel can handle API endpoints to be used by various external applications, let's create a simple project which handle request from outside world and manage everything. Sending Email and handling events is the best part of this project. Using Vuejs we create a saperate Single Page Application(SPA) to manage invitaion and guest lists for every user of our application."
+        "Laravel can handle API endpoints to be used by various external applications, let's create a simple project which handle request from outside world and manage everything. Sending Email and handling events is the best part of this project. Using Nuxtjs we create a saperate Single Page Application(SPA) to manage invitaion and guest lists for every user of our application."
     },
     {
       title: "Project 4 - Test Driven Blog",
       details:
         "Laravel makes testing super easy and if you don't know testing then you are not a good developer. Creating a blog with TDD (Test Driven Development) approach. How to think about writing tests. How testing help you to refactor code and why testing boost up your confidence."
+    },
+    {
+      title: "Project 5 - Support Ticket system with Laravel Livewire",
+      details:
+        "Creating a Single Page Application without writing any javascript that is using Laravel Livewire. Real Time Validation, Events, Pagination and lots of fun part."
     },
     {
       title: "Deploying every project on server",
@@ -74,7 +79,9 @@
   <div class="flex flex-wrap lg:w-10/12 justify-around">
     {#each items as item}
       <div class="py-5 lg:w-1/2 lg:px-10">
-        <p class="italic text-gray-800 font-semibold text-2xl py-3">{item.title}</p>
+        <p class="italic text-gray-800 font-semibold text-2xl py-3">
+          {item.title}
+        </p>
         <p class="text-xl text-gray-700">
           {@html item.details}
         </p>

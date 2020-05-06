@@ -7,7 +7,7 @@
       <a class="px-2" href="https://bitfumes.com/refund">Refund</a>
     </div>
     <p class="w-full text-center py-2 lg:w-1/2">
-      Copywrite © Bitfumes - All Right Left super reserved. 😝
+      Copyrite © Bitfumes - All Right Left super reserved. 😝
     </p>
   </div>
 </footer>

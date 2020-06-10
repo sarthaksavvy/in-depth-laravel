@@ -1,15 +1,17 @@
 <section>
   <div
-    class="shadow-md py-24 px-4 bg-repeat bg-fixed justify-center flex flex-wrap
-    transform -skew-y-3"
+    class="py-24 px-4 bg-repeat bg-fixed justify-center flex flex-wrap transform
+    -skew-y-3"
     style="background-image:url('static/hero/topography.svg')">
     <div class="py-5">
       <div class="bg-blue-500 h-4 rounded-full relative" />
       <h2 class="text-4xl text-center font-serif font-bold md:text-5xl">
-        About Me
+        About Your Instructor
       </h2>
     </div>
-    <div class="py-4 text-black flex flex-wrap flex-grow text-gray-800">
+    <div
+      class="py-4 text-black flex flex-wrap justify-between w-full text-gray-800
+      lg:w-10/12">
       <div class="text-center w-full md:w-4/12">
         <div class="flex justify-center">
           <img

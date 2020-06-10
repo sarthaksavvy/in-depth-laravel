@@ -6,6 +6,7 @@
   let titleSound;
   let playClass;
   let foldSound;
+  let tweetText = `https://twitter.com/intent/tweet?text=Hey, I just subscribed for 'In-Depth Laravel' course from @bitfumes. You will learn from basics to TDD, @vuejs to @LaravelLivewire all in one. I recommend to have it now. #laravel #php #developer #javascript #vuejs #100daysofcode`;
 
   // onMount(async () => {});
   window.addEventListener("scroll", () => {
@@ -102,12 +103,22 @@
     Your browser isn't invited for super fun audio time.
   </audio>
 
-  <h1
-    class="text-5xl pt-10 lg:text-6xl transform -skew-y-3 cursor-pointer title"
-    on:mouseover={playSound(titleSound)}>
-    In Depth Laravel
-    <span class="transform skew-y-6">🎉</span>
-  </h1>
+  <div
+    class="flex justify-center w-full pt-10 transform -skew-y-3 cursor-pointer
+    title">
+    <div class="my-3 lg:my-6 mr-1 md:mx-2">
+      <img
+        src="/static/images/laravel-logo.png"
+        class="w-10 h-10 lg:w-16 lg:h-16"
+        alt="laravel logo" />
+    </div>
+    <h1
+      class="text-4xl lg:text-6xl font-semibold"
+      on:mouseover={playSound(titleSound)}>
+      In Depth Laravel
+      <span class="transform skew-y-6">🎉</span>
+    </h1>
+  </div>
   <p class="text-gray-600 bg-white tracking-wide lg:text-sm lg:py-0">
     Passionately designed video course for laravel artisans from beginning to
     advanced.
@@ -117,12 +128,24 @@
     <div class="">
       <div class="pt-10">
         <h2 class="text-3xl tracking-wide text-center">
-          We are Launching
-          <strong>Soon!</strong>
+          We are close to
+          <strong>Launch!</strong>
         </h2>
-        <p class="text-gray-600">Subscribe and get course preview video!</p>
+        <p class="text-gray-600">Subscribe and get course preview video !</p>
         <div class="py-10">
           <Subscription />
+          <div class="flex my-3">
+            <p class="mr-2">➡</p>
+            <p>Help others to find this course</p>
+            <div class="px-4">
+              <a
+                class="twitter-share-button"
+                href={tweetText}
+                data-size="large">
+                Tweet
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -131,23 +154,23 @@
       <h2 class="text-3xl">What you will get 😎</h2>
       <ul class="text-xl py-2">
         <li class="py-1 text-left typewriter">
-          <i class="fas fa-check-circle text-green-700 px-1 py-2" />
+          <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
           Source Code
         </li>
         <li class="py-1 text-left typewriter">
-          <i class="fas fa-check-circle text-green-700 px-1 py-2" />
+          <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
           4 awesome Projects
         </li>
         <li class="py-1 text-left typewriter">
-          <i class="fas fa-check-circle text-green-700 px-1 py-2" />
+          <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
           Students Only Slack
         </li>
         <li class="py-1 text-left typewriter">
-          <i class="fas fa-check-circle text-green-700 px-1 py-2" />
+          <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
           Laravel + (Livewire, Vuejs, Nuxtjs)
         </li>
         <li class="py-1 text-left typewriter">
-          <i class="fas fa-check-circle text-green-700 px-1 py-2" />
+          <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
           Lifetime Updates, every laravel release
         </li>
       </ul>
@@ -158,7 +181,7 @@
       class="bottom-0 z-20 inset-x-0 mb-3 text-white cursor-pointer fixed "
       id="pop">
       <a
-        href="#what-your-will-learn"
+        href="#course-preview"
         on:click={playSound(foldSound)}
         class="inline-block align-middle rounded-full bg-teal-700 w-8 h-8">
         <span class="fas fa-angle-down text-2xl pt-1" />

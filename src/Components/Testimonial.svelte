@@ -9,8 +9,8 @@
       Hear from people about my work
     </h2>
   </div>
-  <div class="w-full lg:w-10/12 flex justify-between">
-    <div class="w-1/3 mx-2">
+  <div class="w-full lg:w-10/12 flex flex-wrap justify-between">
+    <div class="w-full md:w-1/3 px-2">
       <div class="w-full inline-block p-0 text-gray-800">
         <blockquote class="twitter-tweet" data-conversation="none">
           <p lang="en" dir="ltr">
@@ -67,7 +67,7 @@
         </blockquote>
       </div>
     </div>
-    <div class="w-1/3 mx-2">
+    <div class="w-full md:w-1/3 px-2">
       <div class="w-full inline-block p-0 text-gray-800">
         <blockquote class="twitter-tweet" data-conversation="none">
           <p lang="en" dir="ltr">
@@ -126,7 +126,7 @@
         </blockquote>
       </div>
     </div>
-    <div class="w-1/3 mx-2">
+    <div class="w-full md:w-1/3 px-2">
       <div class="w-full inline-block p-0 text-gray-800">
         <blockquote class="twitter-tweet" data-conversation="none">
           <p lang="en" dir="ltr">

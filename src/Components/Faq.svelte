@@ -34,7 +34,8 @@
 </script>
 
 <section
-  class="text-center bg-gray-100 px-8 py-24 flex flex-wrap justify-center">
+  class="text-center bg-gray-100 px-8 py-24 flex flex-wrap justify-center
+  relative">
   <div class="my-5">
     <div>
       <div class="bg-purple-500 h-4 rounded-full relative" />
@@ -46,8 +47,12 @@
   <div class="lg:w-10/12 flex flex-wrap justify-between">
     {#each questions as question}
       <div class="py-4 lg:w-1/2 lg:px-10">
-        <p class="italic text-2xl font-semibold text-gray-900 py-2">{question.title}</p>
-        <p class="text-gray-800 text-xl">{@html question.answer}</p>
+        <p class="italic text-2xl font-semibold text-gray-900 py-2">
+          {question.title}
+        </p>
+        <p class="text-gray-800 text-xl">
+          {@html question.answer}
+        </p>
       </div>
     {/each}
   </div>

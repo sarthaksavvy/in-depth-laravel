@@ -4,19 +4,20 @@
   import { navigate } from "svelte-routing";
 
   let email;
+  let name;
   let loading = false;
 
   function handleForm(e) {
     e.preventDefault();
 
-    if (loading || email == null) {
+    if (loading || (email == null && name == null)) {
       return;
     }
 
     loading = true;
     axios
       .post(`${process.env.API_URL}/in-depth-laravel/member/subscribe`, {
-        name: email,
+        name: name,
         email: email
       })
       .then(res => {
@@ -38,23 +39,36 @@
   }
 </script>
 
-<form
-  class="border-2 border-yellow-400 shadow-2xl rounded bg-white p-2 flex
-  justify-between"
-  on:submit={handleForm}>
-  <input
-    type="email"
-    placeholder="Your Awesome Email..."
-    bind:value={email}
-    class="outline-none text-black px-1" />
-  <div class="bg-blue-600 rounded shadow-2xl text-white cursor-pointer w-32">
+<form class="" on:submit={handleForm}>
+  <div class="border-2 border-blue-200 shadow-2xl rounded-md bg-white p-2 my-2">
+    <input
+      type="text"
+      placeholder="Your Nice Name..."
+      bind:value={name}
+      class="outline-none text-black px-1 w-full" />
+  </div>
+  <div class="border-2 border-blue-200 shadow-2xl rounded bg-white p-2 my-2">
+    <input
+      type="email"
+      placeholder="Awesome Email..."
+      bind:value={email}
+      class="outline-none text-black px-1 w-full" />
+  </div>
+  <div
+    class="bg-blue-600 rounded-md shadow-2xl text-white cursor-pointer w-full">
     {#if loading}
       <i class="fas fa-circle-notch fa-spin text-2xl px-2 py-2 text-blue-400" />
     {:else}
-      <input
-        type="submit"
-        value="Subscribe Now"
-        class="p-2 bg-blue-600 cursor-pointer" />
+      <button
+        class="p-2 bg-blue-800 rounded-md cursor-pointer relative w-full
+        hover:text-white hover:bg-blue-600 transition-all duration-300
+        overflow-hidden"
+        type="submit">
+        <p class="ml-16 -mt-3 text-3xl absolute">👉</p>
+        <div class="flex justify-center">
+          <p>Subscribe Now</p>
+        </div>
+      </button>
     {/if}
   </div>
 </form>

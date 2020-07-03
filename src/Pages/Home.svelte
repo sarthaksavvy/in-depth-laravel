@@ -9,15 +9,19 @@
   import WhyLaravel from "../Components/WhyLaravel.svelte";
   import TeamPackage from "../Components/TeamPackage.svelte";
   import Preview from "../Components/Preview.svelte";
+  import Intro from "../Components/Intro.svelte";
+  import BuyNow from "../Components/Payment/BuyNow.svelte";
 </script>
 
 <Banner />
 <Preview />
 <!-- <TeamPackage /> -->
 <WhatYouWillLearn />
+<Intro />
 <Testimonial />
 <WhyLaravel />
 <Instructor />
 <Faq />
+<BuyNow />
 <EmailButton />
 <Footer />

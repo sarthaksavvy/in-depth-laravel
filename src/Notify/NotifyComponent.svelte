@@ -35,7 +35,7 @@
     background-color: #fff;
   }
   .box {
-    z-index: 10;
+    z-index: 111;
     position: fixed;
     color: #fff;
     display: flex;

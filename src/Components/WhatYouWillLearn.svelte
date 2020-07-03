@@ -28,7 +28,7 @@
     {
       title: "Project 3 - Eventile - An Event Ticket App API",
       details:
-        "Laravel can handle API endpoints to be used by various external applications, let's create a simple project which handle request from outside world and manage everything. Sending Email and handling events is the best part of this project. Using Nuxtjs we create a saperate Single Page Application(SPA) to manage invitaion and guest lists for every user of our application."
+        "Laravel can handle API endpoints to be used by various external applications, let's create a simple project which handle request from outside world and manage everything. Sending Email, Integrating Stripe Payment gateway and Authentication using Sanctum are the best part of this project. Using Nuxtjs we create a saperate Single Page Application(SPA) to sell tickets and notify user via Laravel Notification."
     },
     {
       title: "Project 4 - Test Driven Blog",
@@ -44,17 +44,17 @@
       title: "Deploying every project on server",
       details:
         'Untill project is not live, developer can not take a deep breath. So using Digital Ocean and AWS we will upload/Deploy all projects and connect with real domain. First we see how to install manually using Digital Ocean server and then use <a href="https://forge.laravel.com" class="text-blue-600" target="_blank"> Laravel Forge</a> to make our life easier.'
-    },
-    {
-      title: "Laravel Interview Questions",
-      details:
-        'I know if you are investing your time and money for this course, you must want to be prepared for getting a good job after this course. So I have decided to dedicate a modules just for this. I answer various common php and laravel quesions like <a href="https://laravel.com/docs/7.x/facades" class="text-blue-600" target="_blank">laravel facades </a>, <a href="https://laravel.com/docs/7.x/providers" class="text-blue-600" target="_blank">service Provider</a>, <a href="https://en.wikipedia.org/wiki/SOLID" class="text-blue-600" target="_blank">SOLID principle</a> and many more.'
-    },
-    {
-      title: "Social media presence and Job preparation",
-      details:
-        "Continuing last module to serve you better content, I can help you to make your github profile better and incresing your social media presence. Also I will share some tips to create your resume stands out and various ways and portals to apply for laravel developer jobs."
     }
+    // {
+    //   title: "Laravel Interview Questions",
+    //   details:
+    //     'I know if you are investing your time and money for this course, you must want to be prepared for getting a good job after this course. So I have decided to dedicate a modules just for this. I answer various common php and laravel quesions like <a href="https://laravel.com/docs/7.x/facades" class="text-blue-600" target="_blank">laravel facades </a>, <a href="https://laravel.com/docs/7.x/providers" class="text-blue-600" target="_blank">service Provider</a>, <a href="https://en.wikipedia.org/wiki/SOLID" class="text-blue-600" target="_blank">SOLID principle</a> and many more.'
+    // },
+    // {
+    //   title: "Social media presence and Job preparation",
+    //   details:
+    //     "Continuing last module to serve you better content, I can help you to make your github profile better and incresing your social media presence. Also I will share some tips to create your resume stands out and various ways and portals to apply for laravel developer jobs."
+    // }
   ];
 </script>
 

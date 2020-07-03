@@ -1,5 +1,6 @@
 <script>
   import Subscription from "./Subscription.svelte";
+  import TableOfContent from "./TableOfContent.svelte";
   // import { onMount } from "svelte";
 
   let atTop = true;
@@ -128,12 +129,22 @@
     <div class="">
       <div class="pt-10">
         <h2 class="text-3xl tracking-wide text-center">
-          We are close to
-          <strong>Launch!</strong>
+          <strong>Journey</strong>
+          has now started
         </h2>
-        <p class="text-gray-600">Subscribe and get course preview video !</p>
+        <!-- <p class="text-gray-600">Subscribe and get course preview video !</p> -->
         <div class="py-10">
-          <Subscription />
+          <div class="flex justify-center">
+            <a
+              href="#buy-now"
+              class="px-2 py-3 my-5 w-64 text-xl rounded-full text-white
+              cursor-pointer"
+              style="background-image: linear-gradient( 135.9deg,
+              rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% )">
+              Enroll to Course
+            </a>
+          </div>
+          <!-- <Subscription /> -->
           <div class="flex my-3">
             <p class="mr-2">➡</p>
             <p>Help others to find this course</p>
@@ -151,7 +162,8 @@
     </div>
 
     <div class="">
-      <h2 class="text-3xl">What you will get 😎</h2>
+      <TableOfContent />
+      <!-- <h2 class="text-3xl">What you will get 😎</h2>
       <ul class="text-xl py-2">
         <li class="py-1 text-left typewriter">
           <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
@@ -173,7 +185,7 @@
           <i class="fas fa-check-circle text-purple-700 px-1 py-2" />
           Lifetime Updates, every laravel release
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
   {#if atTop}

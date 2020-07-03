@@ -10,15 +10,13 @@
       </h2>
     </div>
     <div
-      class="py-4 text-black flex flex-wrap justify-between w-full text-gray-800
-      lg:w-10/12">
+      class="py-4 flex flex-wrap justify-between w-full text-gray-800 lg:w-10/12">
       <div class="text-center w-full md:w-4/12">
         <div class="flex justify-center">
           <img
             src="https://pbs.twimg.com/profile_images/1109897807735873536/shv8rkm-_200x200.jpg"
             alt="sarthaksavvy"
-            class="rounded-full border shadow-lg border border-b-4
-            border-blue-400" />
+            class="rounded-full shadow-lg border border-b-4 border-blue-400" />
         </div>
 
         <div class="py-4 flex justify-center">
@@ -44,14 +42,15 @@
           <a href="https://youtube.com/bitfumes" class="text-blue-600">
             youtube{' '}
           </a>
-          with more than 45k subscribers.
+          with more than 50k subscribers.
         </p>
         <p class="p-2 md:p-4">
           I have already Published many free and paid courses on various
           platforms.
         </p>
         <p class="p-2 md:p-4">
-          I Work with open sourced technologies and also creating many laravel{' '}
+          I have worked with open sourced technologies and also created many
+          laravel{' '}
           <a href="https://github.com/sarthaksavvy" class="text-blue-600">
             open source package
           </a>

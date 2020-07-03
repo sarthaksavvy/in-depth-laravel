@@ -2,7 +2,7 @@
   const tweets = [{}];
 </script>
 
-<section class="py-24 px-8 flex justify-center flex-wrap">
+<section class="py-24 px- flex justify-center flex-wrap">
   <div>
     <div class="bg-teal-600 h-4 rounded-full relative" />
     <h2 class="text-4xl text-center font-serif font-bold md:text-5xl">

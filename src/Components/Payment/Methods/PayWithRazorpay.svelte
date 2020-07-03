@@ -30,6 +30,7 @@
         var rzp1 = new Razorpay({
           ...options,
           amount: $store.course.discountedPrice * 100,
+          coupon: $store.coupon,
           service: RAZORPAY,
           currency: "USD",
           receipt: 1,

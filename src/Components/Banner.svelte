@@ -7,7 +7,9 @@
   let titleSound;
   let playClass;
   let foldSound;
-  let tweetText = `https://twitter.com/intent/tweet?text=Hey, I just subscribed for 'In-Depth Laravel' course from @bitfumes. You will learn from basics to TDD, @vuejs to @LaravelLivewire all in one. I recommend to have it now. #laravel #php #developer #javascript #vuejs #100daysofcode`;
+  let tweetText = `https://twitter.com/intent/tweet?text=In-Depth Laravel course from @bitfumes is now available. You will learn from basics to TDD, @vuejs, @laravelphp, @nuxt_js, @LaravelLivewire to Deploying on forge using @digitalocean all in one
+https://indepthlaravel.com 
+#php #developer #javascript #100daysofcode`;
 
   // onMount(async () => {});
   window.addEventListener("scroll", () => {

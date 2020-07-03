@@ -16,7 +16,7 @@
 
     loading = true;
     axios
-      .post(`${process.env.API_URL}/in-depth-laravel/member/subscribe`, {
+      .post(`${process.env.MAILTREE_URL}/in-depth-laravel/member/subscribe`, {
         name: name,
         email: email
       })

@@ -38,7 +38,7 @@
             <div class="font-bold w-full flex justify-center">
               <p class="py-6">$</p>
               <p class="text-6xl font-light transition-all duration-500">
-                {$store.course.finalPrice}
+                {$store.course.discountedPrice}
               </p>
             </div>
           </section>

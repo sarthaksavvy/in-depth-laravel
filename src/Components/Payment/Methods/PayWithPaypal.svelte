@@ -16,7 +16,7 @@
               {
                 amount: {
                   currency_code: "USD",
-                  value: $store.course.finalPrice
+                  value: $store.course.discountedPrice
                 }
               }
             ]
@@ -29,7 +29,7 @@
               service: PAYPAL,
               orderId: data.orderID,
               coupon: $store.coupon,
-              amount: $store.course.finalPrice * 100,
+              amount: $store.course.discountedPrice * 100,
               description: $store.course.title,
               item_id: $store.course.id,
               email: $store.user.email,

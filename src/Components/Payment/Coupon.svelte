@@ -8,7 +8,10 @@
   function calculateFinalPrice(discount) {
     let result = $store.course.finalPrice * (1 - discount / 100);
     store.update(n => {
-      return { ...n, course: { ...n.course, finalPrice: Math.ceil(result) } };
+      return {
+        ...n,
+        course: { ...n.course, discountedPrice: Math.ceil(result) }
+      };
     });
   }
 
@@ -49,7 +52,11 @@
     entered = "";
     coupon = null;
     store.update(n => {
-      return { ...n, coupon: null };
+      return {
+        ...n,
+        coupon: null,
+        course: { ...n.course, discountedPrice: n.course.finalPrice }
+      };
     });
   }
 </script>

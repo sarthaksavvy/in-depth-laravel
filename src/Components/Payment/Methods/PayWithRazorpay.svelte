@@ -22,14 +22,14 @@
     axios
       .post(`${process.env.API_URL}/payment/pay`, {
         service: RAZORPAY,
-        amount: $store.course.finalPrice * 100,
+        amount: $store.course.discountedPrice * 100,
         currency: "USD",
         payment_capture: 1
       })
       .then(res => {
         var rzp1 = new Razorpay({
           ...options,
-          amount: $store.course.finalPrice * 100,
+          amount: $store.course.discountedPrice * 100,
           service: RAZORPAY,
           currency: "USD",
           receipt: 1,
@@ -57,7 +57,7 @@
     let data = {
       ...res,
       service: RAZORPAY,
-      amount: $store.course.finalPrice * 100,
+      amount: $store.course.discountedPrice * 100,
       coupon: $store.course.coupon,
       description: `Pay for ${$store.course.title} course`,
       item_id: $store.course.id,

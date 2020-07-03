@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 export const store = writable({
-  user: { email: "sarthak@bitfumes.com", name: "sarthak" },
+  user: { email: "", name: "" },
   course: {
     finalPrice: 29,
     discountedPrice: 29,

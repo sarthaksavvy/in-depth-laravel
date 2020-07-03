@@ -54,12 +54,12 @@
       });
   }
 
-  function handleVerify(res) {
+  async function handleVerify(res) {
     let data = {
       ...res,
       service: RAZORPAY,
       amount: $store.course.discountedPrice * 100,
-      coupon: $store.course.coupon,
+      coupon: $store.coupon,
       description: `Pay for ${$store.course.title} course`,
       item_id: $store.course.id,
       email: $store.user.email,
@@ -67,7 +67,10 @@
     };
 
     try {
-      const res = axios.post(`${process.env.API_URL}/payment/verify`, data);
+      const res = await axios.post(
+        `${process.env.API_URL}/payment/verify`,
+        data
+      );
       notify({
         message: "Congrats! you have this course now. Please check your email",
         type: "success",

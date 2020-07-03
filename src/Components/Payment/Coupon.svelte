@@ -6,7 +6,7 @@
   let entered = "";
   let coupon = null;
   function calculateFinalPrice(discount) {
-    let result = $store.course.basePrice * (1 - discount / 100);
+    let result = $store.course.finalPrice * (1 - discount / 100);
     store.update(n => {
       return { ...n, course: { ...n.course, finalPrice: Math.ceil(result) } };
     });
@@ -78,7 +78,7 @@
     <div class="flex flex-wrap text-sm font-light">
       <p class="w-full">
         Coupon
-        <span class="px-2 text-green-800">{$store.coupon.name}</span>
+        <span class="px-2 text-green-800">{coupon.name}</span>
         is applied
         <i
           class="fas fa-times-circle text-red-300 mx-2 cursor-pointer"

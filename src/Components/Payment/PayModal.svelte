@@ -2,6 +2,17 @@
   import ChoosePayment from "./ChoosePayment.svelte";
   import Coupon from "./Coupon.svelte";
   import { store } from "../../store.js";
+  import { onDestroy } from "svelte";
+
+  onDestroy(() => {
+    store.update(n => {
+      return {
+        ...n,
+        coupon: null,
+        course: { ...n.course, discountedPrice: n.course.finalPrice }
+      };
+    });
+  });
 
   function close() {
     store.update(n => {

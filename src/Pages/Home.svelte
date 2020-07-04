@@ -11,12 +11,14 @@
   import Preview from "../Components/Preview.svelte";
   import Intro from "../Components/Intro.svelte";
   import BuyNow from "../Components/Payment/BuyNow.svelte";
+  import QuoteFromTaylor from "../Components/QuoteFromTaylor.svelte";
 </script>
 
 <Banner />
 <Preview />
 <!-- <TeamPackage /> -->
 <WhatYouWillLearn />
+<QuoteFromTaylor />
 <Intro />
 <Testimonial />
 <WhyLaravel />

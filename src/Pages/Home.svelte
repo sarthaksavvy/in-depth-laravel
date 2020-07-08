@@ -16,7 +16,6 @@
 
 <Banner />
 <Preview />
-<!-- <TeamPackage /> -->
 <WhatYouWillLearn />
 <QuoteFromTaylor />
 <Intro />
@@ -25,5 +24,6 @@
 <Instructor />
 <Faq />
 <BuyNow />
+<TeamPackage />
 <EmailButton />
 <Footer />
